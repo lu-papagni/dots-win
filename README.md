@@ -12,3 +12,8 @@ dove `<percorso_file>` è il path ad un [backup di scoop](https://github.com/lu-
 
 > [!NOTE]
 > il file deve essere presente localmente sul sistema, `scoop` non può leggere un file remoto.
+
+## MSI Afterburner
+Installare il software da [qui](https://www.guru3d.com/download/msi-afterburner-beta-download/).
+Durante l'installazione verrà scaricato anche `RivaTunerStatisticsServer`;
+questo è normale in quanto è una dipendenza di `Afterburner`.
