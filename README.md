@@ -6,6 +6,12 @@ Seguire questa [guida](https://gravesoft.dev/office_c2r_custom) per installare u
 ### PowerShell
 Copiare il [profilo powershell](https://github.com/lu-papagni/dots-win/raw/main/Microsoft.PowerShell_profile.ps1) in
 `C:\UTENTE\Documents\WindowsPowerShell`.
+> [!WARNING]
+> Il modulo `PSFzf` richiede che `fzf` sia già installato!
+
+### Terminal
+Copiare il [profilo](https://github.com/lu-papagni/dots-win/blob/main/windows-terminal/settings.json) di Windows Terminal
+in `%LocalAppData%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState`.
 
 ### Scoop
 Package manager per Windows.
