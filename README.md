@@ -6,9 +6,26 @@ alcune funzioni inutili, creare account locali ed eseguire comandi custom durant
 - Al termine basta scaricare il file appena creato ed copiarlo in un'immagine di Windows originale o in una chiavetta USB
 configurata come live-cd.
 
+## Driver
+### Chipset (AMD)
+Per installare i driver di un processore AMD basta scaricare il
+[setup automatico](https://drivers.amd.com/drivers/installer/24.10/whql/amd-software-adrenalin-edition-24.8.1-minimalsetup-240829_web.exe) ed eseguirlo.
+Il modello della CPU installata sarà riconosciuto in automatico e verranno installati i driver corretti.
+> [!IMPORTANT]
+> Al termine dell'installazione andare in `Pannello di controllo > Opzioni risparmio energia` e selezionare il piano energetico _Ryzen Balanced_.
+> Questo piano è ottimizzato per la CPU in uso.
+
+### Scheda video (NVIDIA)
+Andare sul [sito ufficiale](https://www.nvidia.com/it-it/drivers/) e scaricare la versione appropriata.
+> [!TIP]
+> Che categoria scegliere?
+> - _GeForce_ per le GPU da gaming.
+> - _TITAN_ oppure _RTX/QUADRO_ per quelle da woskstation.
+
 ## Software essenziali
 ### Office
 Seguire questa [guida](https://gravesoft.dev/office_c2r_custom) per installare una versione custom di Office (originale).
+Successivamente sarà possibile attivarlo usando la guida al paragrafo [Attivazione](#attivazione).
 
 ### Scoop
 Package manager per Windows.
@@ -24,7 +41,7 @@ Copiare il [profilo powershell](https://github.com/lu-papagni/dots-win/raw/main/
 > [!WARNING]
 > Il modulo `PSFzf` richiede che `fzf` sia già installato!
 
-### Terminal
+### Windows Terminal
 Copiare il [profilo](https://github.com/lu-papagni/dots-win/blob/main/windows-terminal/settings.json) di Windows Terminal
 in `%LocalAppData%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState`.
 > [!NOTE]
@@ -34,9 +51,8 @@ in `%LocalAppData%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState`.
 - Monitora i parametri del sistema, in particolare quelli della GPU.
 - Mostra a schermo le informazioni specificate usando una combinazione di tasti.
 
-Installare il software da [qui](https://www.guru3d.com/download/msi-afterburner-beta-download/).
-Durante l'installazione verrà scaricato anche `RivaTunerStatisticsServer`;
-questo è normale in quanto è una dipendenza di `Afterburner`.
+Installare il software dal [sito ufficiale](https://www.guru3d.com/download/msi-afterburner-beta-download/).
+Durante l'installazione verrà scaricato anche `RivaTunerStatisticsServer`: questo è normale in quanto è una dipendenza di `Afterburner`.
 
 ## Utility
 | Nome                                                                                | Descrizione                                              |
