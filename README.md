@@ -34,6 +34,8 @@ Installare [scoop](https://scoop.sh/) e, successivamente, eseguire nel terminale
 scoop import <percorso_file>
 ```
 dove `<percorso_file>` è il path ad un [backup di scoop](https://github.com/lu-papagni/dots-win/raw/main/scoop-backup.json).
+> [!NOTE]
+> il file deve essere presente localmente sul sistema, `scoop` non può leggere un file remoto.
 
 ### PowerShell
 Copiare il [profilo powershell](https://github.com/lu-papagni/dots-win/raw/main/Microsoft.PowerShell_profile.ps1) in
@@ -44,8 +46,6 @@ Copiare il [profilo powershell](https://github.com/lu-papagni/dots-win/raw/main/
 ### Windows Terminal
 Copiare il [profilo](https://github.com/lu-papagni/dots-win/blob/main/windows-terminal/settings.json) di Windows Terminal
 in `%LocalAppData%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState`.
-> [!NOTE]
-> il file deve essere presente localmente sul sistema, `scoop` non può leggere un file remoto.
 
 ### MSI Afterburner
 - Monitora i parametri del sistema, in particolare quelli della GPU.
