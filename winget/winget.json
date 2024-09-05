@@ -24,6 +24,9 @@
 				{
 					"PackageIdentifier" : "OpenJS.NodeJS"
 				},
+                {
+                    "PackageIdentifier" : "qBittorrent.qBittorrent"
+                },
 				{
 					"PackageIdentifier" : "NordSecurity.NordVPN"
 				},
