@@ -22,6 +22,9 @@ Andare sul [sito ufficiale](https://www.nvidia.com/it-it/drivers/) e scaricare l
 > - _GeForce_ per le GPU da gaming.
 > - _TITAN_ oppure _RTX/QUADRO_ per quelle da woskstation.
 
+### Tastiera Epomaker
+Scaricare e installare il [driver](https://orders.epomaker.com/software/EPOMAKER_setup_2.1.71.zip).
+
 ## Software essenziali
 ### Office
 Seguire questa [guida](https://gravesoft.dev/office_c2r_custom) per installare una versione custom di Office (originale).
