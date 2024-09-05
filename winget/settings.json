@@ -1,0 +1,15 @@
+{
+    "$schema": "https://aka.ms/winget-settings.schema.json",
+    "telemetry" : {
+        "disable" : true
+    },
+    "interactivity": {
+        "disable" : true
+    },
+    "uninstallBehavior": {
+        "purgePortablePackage": true
+    },
+    "experimentalFeatures": {
+       "configureSelfElevate": true
+    },
+}
