@@ -25,10 +25,31 @@ Andare sul [sito ufficiale](https://www.nvidia.com/it-it/drivers/) e scaricare l
 ## Software essenziali
 ### Office
 Seguire questa [guida](https://gravesoft.dev/office_c2r_custom) per installare una versione custom di Office (originale).
-Successivamente sarà possibile attivarlo usando la guida al paragrafo [Attivazione](#attivazione).
+Successivamente sarà possibile attivarlo usando la guida al paragrafo [#attivazione](#attivazione).
+
+## WinGet
+Package manager <ins>integrato</ins> in Windows 11.
+
+Le [impostazioni](https://github.com/lu-papagni/dots-win/raw/main/winget/settings.json) vanno copiate in 
+`%localappdata%\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\settings.json`
+
+Per installare i programmi elencati in un file [winget.json](https://github.com/lu-papagni/dots-win/raw/main/winget/winget.json) eseguire
+```ps1
+winget import -i winget.json
+```
+Per aggiornare tutti i pacchetti presenti sul sistema eseguire
+```ps1
+winget upgrade --all
+```
+> [!TIP]
+> Per accettare automaticamente l'EULA di tutti i programmi basta aggiungere al comando precedente il
+> parametro `--accept-package-agreements`.
 
 ### Scoop
 Package manager per Windows.
+> [!IMPORTANT]
+> Se si usa WinGet è sconsigliato configurare `scoop` dato che si avrebbe ridondanza.
+
 Installare [scoop](https://scoop.sh/) e, successivamente, eseguire nel terminale il comando
 ```ps1
 scoop import <percorso_file>
@@ -39,7 +60,7 @@ dove `<percorso_file>` è il path ad un [backup di scoop](https://github.com/lu-
 
 ### PowerShell
 Copiare il [profilo powershell](https://github.com/lu-papagni/dots-win/raw/main/Microsoft.PowerShell_profile.ps1) in
-`C:\UTENTE\Documents\WindowsPowerShell`.
+`%userprofile%\Documents\WindowsPowerShell`.
 > [!WARNING]
 > Il modulo `PSFzf` richiede che `fzf` sia già installato!
 
@@ -78,3 +99,8 @@ Per ulteriori info visitare la [pagina dello script](https://github.com/massgrav
 2. Premere <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>CANC</kbd>
 3. Il pulsante _Cambia password_ sarà cliccabile.
 4. Seguire la procedura guidata.
+
+### Stallo WinGet durante operazioni su un pacchetto
+- È un [bug](https://github.com/microsoft/winget-pkgs/issues/133283) che si verifica specialmente quando il pacchetto installa la versione
+portable dell'eseguibile.
+- Non esiste un fix completo ma sono stati trovati dei [workaround](https://github.com/microsoft/winget-cli/issues/3279).
