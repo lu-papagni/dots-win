@@ -64,9 +64,6 @@
 					"PackageIdentifier" : "VideoLAN.VLC"
 				},
 				{
-					"PackageIdentifier" : "WinSCP.WinSCP"
-				},
-				{
 					"PackageIdentifier" : "Python.Launcher"
 				},
 				{
