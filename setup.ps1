@@ -38,7 +38,12 @@ function Import-MySettings {
         $fileName = $target.fileName
         $configPath = $target.configPath
 
-        New-Item -ItemType Directory -Path "$configPath"
+        try {
+          New-Item -ItemType Directory -Path "$configPath" -ErrorAction Stop
+        } catch [System.IO.IOException] {
+          Write-Host -ForegroundColor Green "Il percorso '$configPath' esiste, non verrà sovrascritto"
+        }
+
         Copy-Item "$program\$fileName" "$configPath" -Force
       }
 
