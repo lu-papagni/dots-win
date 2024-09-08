@@ -6,6 +6,9 @@
 		{
 			"Packages" : 
 			[
+        {
+          "PackageIdentifier" : "Microsoft.PowerShell"
+        },
 				{
 					"PackageIdentifier" : "Audacity.Audacity"
 				},
@@ -17,9 +20,6 @@
 				},
 				{
 					"PackageIdentifier" : "AntibodySoftware.WizTree"
-				},
-				{
-					"PackageIdentifier" : "MiniTool.PartitionWizard.Free"
 				},
 				{
 					"PackageIdentifier" : "OpenJS.NodeJS"
