@@ -4,6 +4,10 @@ function Import-MySettings {
       @{
         fileName = "Microsoft.PowerShell_profile.ps1"
         configPath = "$env:userprofile\Documents\WindowsPowerShell"
+      },
+      @{
+        fileName = "Microsoft.PowerShell_profile.ps1"
+        configPath = "$env:userprofile\Documents\PowerShell"
       }
     )
     afterburner = @(
@@ -34,7 +38,8 @@ function Import-MySettings {
         $fileName = $target.fileName
         $configPath = $target.configPath
 
-        Copy-Item "$program\$fileName" "$configPath"
+        New-Item -ItemType Directory -Path "$configPath"
+        Copy-Item "$program\$fileName" "$configPath" -Force
       }
 
     } else {
