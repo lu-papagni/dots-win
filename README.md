@@ -103,7 +103,18 @@ Per ulteriori info visitare la [pagina dello script](https://github.com/massgrav
 3. Il pulsante _Cambia password_ sarà cliccabile.
 4. Seguire la procedura guidata.
 
-### Stallo WinGet durante operazioni su un pacchetto
-- È un [bug](https://github.com/microsoft/winget-pkgs/issues/133283) che si verifica specialmente quando il pacchetto installa la versione
-portable dell'eseguibile.
-- Non esiste un fix completo ma sono stati trovati dei [workaround](https://github.com/microsoft/winget-cli/issues/3279).
+### Winget
+1. **Stallo durante operazioni su un pacchetto**
+   - È un [bug](https://github.com/microsoft/winget-pkgs/issues/133283) che si verifica specialmente quando il pacchetto installa la versione
+     portable dell'eseguibile.
+   - Non esiste un fix completo ma sono stati trovati dei [workaround](https://github.com/microsoft/winget-cli/issues/3279).
+
+2. **Errore 'Data required by the source is missing'**
+   - Si può verificare sulle installazioni pulite di Windows 11.
+   - Il fix sembra essere [questo](https://github.com/microsoft/winget-cli/issues/3068#issuecomment-1934922201).
+
+### PowerShell
+1. **Gli script di terze parti non vengono eseguiti**
+   - Per prima cosa verificare che la politica di esecuzione degli script sia impostata su `RemoteSigned`.
+   - Anche in questa modalità bisogna 'sbloccare' manualmente gli script con il comando `Unblock-File <nome_file>`.
+   - Qui c'è la [documentazione rilevante](https://learn.microsoft.com/it-it/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4).
