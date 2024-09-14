@@ -1,0 +1,1 @@
+start /min rclone.exe mount gdrive: G: --volname "\\GDRIVE\google-drive" --no-console --vfs-cache-mode full --vfs-cache-max-age 3d --vfs-cache-max-size 1G
