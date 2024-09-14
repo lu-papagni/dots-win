@@ -1,5 +1,11 @@
 function Import-MySettings {
   $programs = @{
+    autostart = @(
+      @{
+        fileName = "*.bat"
+        configPath = "$env:appdata\Microsoft\Windows\Start Menu\Programs\Startup"
+      }
+    )
     powershell = @(
       @{
         fileName = "Microsoft.PowerShell_profile.ps1"
