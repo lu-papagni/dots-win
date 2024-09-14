@@ -1,14 +1,11 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2024-09-05T15:45:54.184-00:00",
+	"CreationDate" : "2024-09-14T16:03:56.760-00:00",
 	"Sources" : 
 	[
 		{
 			"Packages" : 
 			[
-        {
-          "PackageIdentifier" : "Microsoft.PowerShell"
-        },
 				{
 					"PackageIdentifier" : "Audacity.Audacity"
 				},
@@ -19,31 +16,37 @@
 					"PackageIdentifier" : "Git.Git"
 				},
 				{
+					"PackageIdentifier" : "VideoLAN.VLC"
+				},
+				{
 					"PackageIdentifier" : "AntibodySoftware.WizTree"
+				},
+				{
+					"PackageIdentifier" : "NordSecurity.NordVPN"
 				},
 				{
 					"PackageIdentifier" : "OpenJS.NodeJS"
 				},
-        {
-          "PackageIdentifier" : "qBittorrent.qBittorrent"
-        },
 				{
-					"PackageIdentifier" : "NordSecurity.NordVPN"
+					"PackageIdentifier" : "Neovim.Neovim"
+				},
+				{
+					"PackageIdentifier" : "RevoUninstaller.RevoUninstaller"
 				},
 				{
 					"PackageIdentifier" : "EclipseAdoptium.Temurin.21.JDK"
 				},
 				{
-					"PackageIdentifier" : "Neovim.Neovim"
+					"PackageIdentifier" : "Neovide.Neovide"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PowerShell"
 				},
 				{
 					"PackageIdentifier" : "Guru3D.Afterburner"
 				},
 				{
 					"PackageIdentifier" : "PowerSoftware.AnyBurn"
-				},
-				{
-					"PackageIdentifier" : "Brave.Brave"
 				},
 				{
 					"PackageIdentifier" : "HandBrake.HandBrake"
@@ -61,10 +64,16 @@
 					"PackageIdentifier" : "Valve.Steam"
 				},
 				{
-					"PackageIdentifier" : "VideoLAN.VLC"
+					"PackageIdentifier" : "qBittorrent.qBittorrent"
 				},
 				{
 					"PackageIdentifier" : "Python.Launcher"
+				},
+				{
+					"PackageIdentifier" : "WinFsp.WinFsp"
+				},
+				{
+					"PackageIdentifier" : "Brave.Brave"
 				},
 				{
 					"PackageIdentifier" : "Discord.Discord"
@@ -73,19 +82,25 @@
 					"PackageIdentifier" : "Gyan.FFmpeg"
 				},
 				{
+					"PackageIdentifier" : "Rclone.Rclone"
+				},
+				{
 					"PackageIdentifier" : "Spotify.Spotify"
 				},
 				{
 					"PackageIdentifier" : "junegunn.fzf"
 				},
 				{
-					"PackageIdentifier" : "Python.Python.3.11"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.PowerToys"
 				},
 				{
+					"PackageIdentifier" : "Python.Python.3.11"
+				},
+				{
 					"PackageIdentifier" : "Microsoft.AppInstaller"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsTerminal"
 				}
 			],
 			"SourceDetails" : 
